@@ -7,6 +7,11 @@ let heroes = [{
   Name: "Wizard",
   Health: 100,
   Level: 1
+},
+{
+  Name: "Jimmy The Cleric",
+  Health: 100,
+  Level: 1
 }
 ]
 
@@ -18,6 +23,12 @@ let boss = [
   }
 ]
 
+let wizHealthCounterElm = document.getElementById('wizard-health')
+let paulHealthCounterElm = document.getElementById('paul-health')
+
+function currentHealth() {
+
+}
 
 function attackBoss() {
   let totalAttack = 0
@@ -26,7 +37,11 @@ function attackBoss() {
   }
 
 
-
   )
+  console.log(totalAttack)
 
 }
+
+
+
+let gold = 0
