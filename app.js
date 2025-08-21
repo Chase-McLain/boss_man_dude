@@ -1,4 +1,4 @@
-let heros = [{
+let heroes = [{
   Name: 'Paul The Barbarian',
   Health: 100,
   Level: 1
@@ -20,6 +20,13 @@ let boss = [
 
 
 function attackBoss() {
+  let totalAttack = 0
+  heroes.forEach((hero) => {
+    totalAttack += hero.Level * 2
+  }
 
+
+
+  )
 
 }
