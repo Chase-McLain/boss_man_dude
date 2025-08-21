@@ -25,6 +25,7 @@ let boss = [
 
 let wizHealthCounterElm = document.getElementById('wizard-health')
 let paulHealthCounterElm = document.getElementById('paul-health')
+let jimmyHealthCounterElm = document.getElementById('jimmy-health')
 
 function currentHealth() {
 
