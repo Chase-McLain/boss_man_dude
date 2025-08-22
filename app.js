@@ -41,15 +41,31 @@ let bossHealthElm = document.getElementById('boss-health')
 
 
 function displayBossHealth() {
-  bossHealthElm.innerHTML = `<p> Health: boss.Health</p>`
+  bossHealthElm.innerHTML = `<p> Health: ${boss.Health}</p>`
 
 }
 
 displayBossHealth()
 
+let multiplier = 1
+
 function bossHealth() {
   boss.Health -= totalAttack
-  console.log(boss.Health)
+  // console.log(boss.Health)
+
+
+
+  if (boss.Health <= 0) {
+
+    multiplier *= 1.1
+    boss.Level += 1
+
+    boss.Health = 100
+    boss.Health = boss.Health * multiplier
+
+
+  }
+  console.log(multiplier)
 }
 
 let totalAttack = 0
@@ -66,6 +82,25 @@ function attackBoss() {
 }
 
 
+
+// -------------heroes-------------
+
+
+function displayPaulHealth() {
+  paulHealthCounterElm.innerHTML = `<p> Health: ${heroes[0].Health}</p>`
+
+}
+
+function displayWizardHealth() {
+  bossHealthElm.innerHTML = `<p> Health: ${boss.Health}</p>`
+
+}
+
+function displayJimmyHealth() {
+  Elm.innerHTML = `<p> Health: ${boss.Health}</p>`
+
+
+}
 
 
 
